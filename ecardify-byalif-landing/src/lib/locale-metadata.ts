@@ -56,11 +56,20 @@ export function getLocaleMetadata(locale: Locale): Metadata {
       siteName: "eCardify",
       locale: cfg.hreflang,
       type: "website",
+      images: [
+        {
+          url: `${DOMAIN}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: "eCardify - Digital Business Cards for Apple Wallet",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: seoTitles[locale],
       description: seoDescriptions[locale],
+      images: [`${DOMAIN}/og-image.png`],
     },
     robots: {
       index: true,

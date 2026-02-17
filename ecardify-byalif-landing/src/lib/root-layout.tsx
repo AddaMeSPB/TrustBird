@@ -63,11 +63,10 @@ export function RootLayoutShell({
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="apple-touch-icon" href="/icon.svg" />
         <ThemeScript />
         <JsonLd />
       </head>
